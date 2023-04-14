@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+::placeholder {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206,0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-clip: border-box;
+    background-position:center;
+    background-color: var(--color-darkblue-alpha);
+    background-attachment: fixed;
+    color: var(--color-white);
+    margin: auto;
+    text-align: center;
+}
+
+.main {
+    margin: 5rem auto 0;
+    max-width: 72rem;
+}
+
+
+#title {
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    line-height: 1.2;
+
+}
+
+#description {
+    font-style: italic;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 1px #222;
+}
+
+#survey-form {
+    padding: 4.4rem;
+    margin-top: 2.8rem;
+    border-radius: 5px;
+    text-align: left;
+    background-color: var(--color-darkblue-alpha);
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    line-height: 1.6;
+    font-size: 1.8rem;
+    margin-top: 8px;
+    border-radius: 4px;
+    color: #666;
+}
+select option {
+    font-size: 1.6rem;
+    line-height: 1.8;
+
+}
+
+input:focus, select:focus {
+    outline: 4px solid #1a3973;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 24px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 5px;
+    vertical-align: sub;
+}
+
+.radio label:not(label:last-child), .checkbox label:not(label:last-child) {
+    margin-bottom: 4px;
+}
+
+#comment {
+    min-height: 120px;
+    width: 100%;
+    padding: 1.25rem;
+    resize: vertical;
+    border-radius: 2px;
+}
+
+legend {
+    margin: 8px 0;
+}
+
+.btn {
+    width: 100%;
+    padding: 1.25rem;
+    border-radius: 2px;
+    background-color: var(--color-green);
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .main{
+        width: 54rem;
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .main {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 479px) {
+    #survey-form{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
