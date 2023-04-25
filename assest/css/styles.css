@@ -148,6 +148,9 @@ legend {
 
 
 @media only screen and (max-width: 479px) {
+    .main {
+        padding: 0 1.5rem;
+    }
     #survey-form{
         padding-left: 1rem;
         padding-right: 1rem;
